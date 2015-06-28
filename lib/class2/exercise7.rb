@@ -31,13 +31,3 @@ puts ('Table of Contents'.center(line_width))
 puts ('Chapter 1:  Getting Started'.ljust(10) + 'page  1'.rjust(23))
 puts ('Chapter 2:  Numbers'.ljust(10) + 'page  9'.rjust(31))
 puts ('Chapter 3:  Letters'.ljust(10) + 'page 13'.rjust(31))
-#
-#     Returns a new String of length Integer with `string` right justified.
-#
-#     'bird'.rjust(10)  #=> '      bird'
-
-line_width = 50
-puts ('Table of Contents'.center(line_width))
-puts ('Chapter 1:  Getting Started'.ljust(10) + 'page  1'.rjust(23))
-puts ('Chapter 2:  Numbers'.ljust(10) + 'page  9'.rjust(31))
-puts ('Chapter 3:  Letters'.ljust(10) + 'page 13'.rjust(31))
