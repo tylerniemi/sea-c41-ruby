@@ -16,17 +16,17 @@ year = start
 
 while year <= finish
 
-    is_leap =
-        if year % 400 == 0
-            true
-        elsif year % 100 == 0
-            false
-        else
-            year % 4 == 0
-        end
-
-    if is_leap; puts year
+  is_leap =
+    if year % 400 == 0
+      true
+    elsif year % 100 == 0
+      false
+    else
+      year % 4 == 0
     end
 
-    year += 1
+  if is_leap; puts year
+    end
+
+  year += 1
 end
