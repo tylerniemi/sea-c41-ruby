@@ -8,3 +8,25 @@
 # divisible by 400 (e.g. 2000).
 #
 # TIP: I expect you to use a loop and a few modulo operations.
+
+start = 1900
+finish = 2000
+
+year = start
+
+while year <= finish
+
+    is_leap =
+        if year % 400 == 0
+            true
+        elsif year % 100 == 0
+            false
+        else
+            year % 4 == 0
+        end
+
+    if is_leap; puts year
+    end
+
+    year += 1
+end
