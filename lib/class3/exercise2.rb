@@ -56,17 +56,17 @@
 # TIP #3: Let the `rand` method return a number in a range starting at zero.
 # What can you do to the number `rand` returns to make it at least 1930?
 
-puts "Nana: HI SWEETIE! GIVE NANA A KISS!"
+puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 input = gets.chomp
 
-while input != "BYE"
+while input != 'BYE'
 
   if input == input.upcase
-    puts "Nana: NOT SINCE " + (1930 +rand(21)).to_s + '!'
+    puts 'Nana: NOT SINCE ' + (1930 + rand(21)).to_s + '!'
   else
-    puts "Nana: HUH?! SPEAK UP, SWEETIE!"
+    puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
   end
   input = gets.chomp
 end
 
-puts "Nana: BYE SWEETIE!"
+puts 'Nana: BYE SWEETIE!'
