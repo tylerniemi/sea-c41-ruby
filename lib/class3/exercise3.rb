@@ -43,10 +43,10 @@ while bye_count <= 2
   if speak != speak.upcase
     bye_count = 0
     puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
-    speak=gets.chomp
+    speak = gets.chomp
   elsif speak == speak.upcase && speak != 'bye'.upcase
     bye_count = 0
-    puts 'Nana: NOT SINCE ' + (1930+(rand(21))).to_s + '!'
+    puts 'Nana: NOT SINCE ' + (1930 + (rand(21))).to_s + '!'
     speak = gets.chomp
   elsif speak == 'bye'.upcase && bye_count < 2
     bye_count += 1
@@ -54,7 +54,7 @@ while bye_count <= 2
     speak = gets.chomp
   elsif bye_count == 2 && speak != 'bye'.upcase
     bye_count = 0
-    puts 'No, not since ' + (1930+(rand(21))).to_s + '?'
+    puts 'No, not since ' + (1930 + (rand(21))).to_s + '?'
     speak = gets.chomp
   elsif bye_count == 2 && speak == 'bye'.upcase
     puts 'Nana: BYE SWEETIE!'
