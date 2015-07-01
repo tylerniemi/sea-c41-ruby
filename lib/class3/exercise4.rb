@@ -25,8 +25,9 @@ while year <= finish
       year % 4 == 0
     end
 
-  if is_leap; puts year
+    if is_leap; puts year
     end
 
   year += 1
+
 end
