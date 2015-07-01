@@ -33,7 +33,6 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 
-speak = ''
 bye_count = 0
 
 puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
