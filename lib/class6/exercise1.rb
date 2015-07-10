@@ -18,10 +18,7 @@
 require 'yaml'
 
 def person
-  { change: 'me' }
+  ['change me']
 end
 
 puts person.to_yaml
-
-database.yaml
-  database.yml
