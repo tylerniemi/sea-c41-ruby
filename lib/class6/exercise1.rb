@@ -18,7 +18,7 @@
 require 'yaml'
 
 def person
-  { change: 'again' }
+  { change: 'me' }
 end
 
 puts person.to_yaml
