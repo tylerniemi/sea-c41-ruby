@@ -34,5 +34,5 @@ class OrangeTree
   end
 end
 
-t = OrangeTree.new
-puts t.pick!
+orange = OrangeTree.new
+puts orange.pick!
