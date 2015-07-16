@@ -24,5 +24,15 @@
 
 # rubocop:disable TrivialAccessors
 class OrangeTree
-  # replace me
+  attr_accessor :fruit
+  def initialize
+    @fruit = 50
+  end
+
+  def pick!(amount = 1)
+    @fruit -= amount if fruit >= amount
+  end
 end
+
+t = OrangeTree.new
+puts t.pick!
