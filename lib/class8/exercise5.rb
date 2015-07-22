@@ -14,7 +14,7 @@
 #   DONG!
 
 def grandfather_clock(hour, &block)
-  hour && block # fix me
+  hour.times { block.call }
 end
 
 input = ARGV[0]
@@ -24,6 +24,10 @@ usage = 'Usage: exercise6.rb 1-12 SOUND'
 abort usage unless input
 abort usage unless input.match(/^\d+$/)
 abort usage unless input.to_i.between?(1, 12)
+
+grandfather_clock(input.to_i) do
+  puts 'DONG!'
+end
 
 grandfather_clock(input.to_i) do
   puts 'DONG!'
